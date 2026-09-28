@@ -16,8 +16,11 @@ export default function Advantages() {
           {advantages.map((advantage, index) => (
             <Reveal key={advantage.title} delay={(index % 3) * 90}>
               <article className="adv-card">
+                <span className="adv-card__num" aria-hidden="true">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
                 <span className="adv-card__icon">
-                  <Icon name={advantage.icon} size={22} />
+                  <Icon name={advantage.icon} size={24} />
                 </span>
                 <h3 className="adv-card__title">{advantage.title}</h3>
                 <p className="adv-card__text">{advantage.text}</p>

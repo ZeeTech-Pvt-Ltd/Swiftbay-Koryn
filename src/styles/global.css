@@ -2274,6 +2274,19 @@ button {
     --p-lead-size: 15.5px;
   }
 
+  .hero {
+    background: var(--bg);
+  }
+
+  .hero__ghost {
+    display: none;
+  }
+
+  .hero__main,
+  .hero__side {
+    animation: none;
+  }
+
   .section {
     padding: 68px 0;
   }

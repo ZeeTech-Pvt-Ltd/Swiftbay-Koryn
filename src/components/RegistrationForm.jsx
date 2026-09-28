@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import 'intl-tel-input/styles'
 import Icon from './Icon'
 import { FORM_ENDPOINT, OFFER_NAME } from '@/data/content'
 
@@ -76,7 +75,9 @@ export default function RegistrationForm({ idPrefix = 'reg' }) {
     let iti = null
     const timers = []
 
-    import('intl-tel-input').then(({ default: intlTelInput }) => {
+    import('intl-tel-input/styles').then(() =>
+      import('intl-tel-input')
+    ).then(({ default: intlTelInput }) => {
       if (cancelled) return
       moduleRef.current = intlTelInput
       iti = intlTelInput(phoneEl, {

@@ -21,7 +21,18 @@ export const metadata = {
   },
   description:
     'Trade crypto and stocks with AI signals and bank grade security on Swiftbay Koryn. Free to join. Sign up today from $250.',
+  keywords: [
+    'swiftbay koryn',
+    'ai trading',
+    'crypto trading',
+    'stock trading',
+    'trading signals',
+    'multi asset trading',
+  ],
   applicationName: SITE.name,
+  category: 'Trading Platform',
+  creator: 'Minahil Tayyab',
+  publisher: 'Minahil Tayyab',
   openGraph: {
     type: 'website',
     locale: 'en_US',

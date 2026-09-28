@@ -9,6 +9,7 @@ export const metadata = pageMeta({
   description:
     'Learn about Swiftbay Koryn: the AI market engine, the multi asset platform for crypto and stocks, and the security first approach. Sign up free today.',
   path: '/about',
+  keywords: ['about swiftbay koryn', 'swiftbay koryn', 'ai market engine', 'trading platform'],
 })
 
 const VALUES = [

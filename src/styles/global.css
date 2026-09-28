@@ -912,18 +912,17 @@ button {
   gap: 13px;
 }
 
-.mkt__badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.92);
+.mkt__logo-frame {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--bg-deep);
   flex-shrink: 0;
+}
+
+.mkt__logo {
+  object-fit: contain;
 }
 
 .mkt__name {
@@ -1202,6 +1201,16 @@ button {
 
 .network__bank-icon {
   color: var(--accent);
+}
+
+.network__logo-frame {
+  position: relative;
+  width: 84px;
+  height: 30px;
+}
+
+.network__logo-img {
+  object-fit: contain;
 }
 
 .network__stats {

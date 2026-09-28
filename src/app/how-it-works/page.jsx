@@ -10,6 +10,7 @@ export const metadata = pageMeta({
   description:
     'How Swiftbay Koryn works in four steps: create your account, fund from $250, follow AI signals and withdraw on demand. Start today.',
   path: '/how-it-works',
+  keywords: ['swiftbay koryn', 'how swiftbay koryn works', 'ai trading signals', 'open trading account'],
 })
 
 export default function HowItWorksPage() {

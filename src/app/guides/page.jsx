@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Reveal from '@/components/Reveal'
-import { pageMeta } from '@/lib/seo'
+import { pageMeta, JsonLd, itemListSchema } from '@/lib/seo'
 import { guides } from '@/data/guides'
 
 export const metadata = pageMeta({
@@ -8,6 +8,7 @@ export const metadata = pageMeta({
   description:
     'Practical Swiftbay Koryn guides on getting started, the AI engine, deposits, stock trading and security. Start reading today.',
   path: '/guides',
+  keywords: ['swiftbay koryn guides', 'trading guides', 'crypto guide', 'stock trading guide'],
 })
 
 export default function GuidesPage() {
@@ -43,6 +44,12 @@ export default function GuidesPage() {
           </div>
         </div>
       </section>
+
+      <JsonLd
+        data={itemListSchema(
+          guides.map((guide) => ({ name: guide.title, path: `/guides/${guide.slug}` }))
+        )}
+      />
     </>
   )
 }

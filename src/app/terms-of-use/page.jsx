@@ -7,6 +7,7 @@ export const metadata = pageMeta({
   description:
     'The terms of use for the Swiftbay Koryn platform: accounts, deposits, withdrawals, acceptable use and liability. Questions? Contact support.',
   path: '/terms-of-use',
+  keywords: ['swiftbay koryn terms', 'swiftbay koryn terms of use'],
 })
 
 export default function TermsPage() {

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { pageMeta, JsonLd, articleSchema } from '@/lib/seo'
+import { pageMeta, JsonLd, articleSchema, breadcrumbSchema } from '@/lib/seo'
 import { guides, getGuide } from '@/data/guides'
 
 export function generateStaticParams() {
@@ -24,6 +24,12 @@ export async function generateMetadata({ params }) {
     title: guide.seoTitle,
     description: guide.seoDescription,
     path: `/guides/${guide.slug}`,
+    keywords: [
+      'swiftbay koryn',
+      'swiftbay koryn guides',
+      guide.category.toLowerCase(),
+      guide.title.toLowerCase(),
+    ],
   })
 }
 
@@ -114,6 +120,13 @@ export default async function GuidePage({ params }) {
       </section>
 
       <JsonLd data={articleSchema(guide, `/guides/${guide.slug}`)} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Guides', path: '/guides' },
+          { name: guide.title, path: `/guides/${guide.slug}` },
+        ])}
+      />
     </>
   )
 }

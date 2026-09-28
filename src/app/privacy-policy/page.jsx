@@ -7,6 +7,7 @@ export const metadata = pageMeta({
   description:
     'How Swiftbay Koryn collects, uses and protects your personal information, and the privacy rights you have. Contact support with questions.',
   path: '/privacy-policy',
+  keywords: ['swiftbay koryn privacy', 'swiftbay koryn privacy policy', 'data protection'],
 })
 
 export default function PrivacyPage() {

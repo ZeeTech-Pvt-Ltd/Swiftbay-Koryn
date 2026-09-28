@@ -7,6 +7,7 @@ export const metadata = pageMeta({
   description:
     'How Swiftbay Koryn uses cookies and similar technologies across the platform, and how to manage them. Manage your cookies today.',
   path: '/cookie-policy',
+  keywords: ['swiftbay koryn cookies', 'swiftbay koryn cookie policy'],
 })
 
 export default function CookiesPage() {

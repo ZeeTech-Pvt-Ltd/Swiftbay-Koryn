@@ -16,6 +16,15 @@ export const metadata = pageMeta({
   description:
     'Trade crypto and stocks with AI signals and bank grade security on Swiftbay Koryn. Free to join. Sign up today from $250.',
   path: '/',
+  keywords: [
+    'swiftbay koryn',
+    'ai trading platform',
+    'crypto trading',
+    'stock trading',
+    'trading signals',
+    'multi asset trading',
+    'live markets',
+  ],
 })
 
 export default function Home() {

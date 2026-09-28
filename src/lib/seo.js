@@ -5,12 +5,13 @@ import { SITE } from '@/data/content'
  * metadataBase is set in the root layout, so relative paths resolve
  * against https://swiftbaykoryn.com.
  */
-export function pageMeta({ title, description, path, noIndex = false }) {
+export function pageMeta({ title, description, path, noIndex = false, keywords = [] }) {
   const canonical = path === '/' ? '/' : path.replace(/\/+$/, '')
 
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical,
     },
@@ -73,6 +74,32 @@ export function faqSchema(items) {
       '@type': 'Question',
       name: item.question,
       acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  }
+}
+
+export function breadcrumbSchema(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: `${SITE.url}${item.path}`,
+    })),
+  }
+}
+
+export function itemListSchema(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: `${SITE.url}${item.path}`,
     })),
   }
 }

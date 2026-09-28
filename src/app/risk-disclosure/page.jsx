@@ -7,6 +7,7 @@ export const metadata = pageMeta({
   description:
     'The trading risks to understand before using Swiftbay Koryn: market volatility, limits of AI tools, liquidity and technology risks. Read before you trade.',
   path: '/risk-disclosure',
+  keywords: ['swiftbay koryn risk disclosure', 'trading risks', 'crypto trading risks'],
 })
 
 export default function RiskPage() {

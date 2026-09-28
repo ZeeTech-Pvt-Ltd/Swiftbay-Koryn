@@ -6,6 +6,7 @@ export const metadata = pageMeta({
   description:
     'Open your Swiftbay Koryn account in minutes. AI powered market signals, 120+ crypto and stock markets and 24/7 support. Free to join, trade from $250.',
   path: '/sign-up',
+  keywords: ['swiftbay koryn sign up', 'open trading account', 'join swiftbay koryn', 'crypto trading account'],
 })
 
 export default function SignUpPage() {

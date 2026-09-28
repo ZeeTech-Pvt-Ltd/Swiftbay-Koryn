@@ -9,6 +9,7 @@ export const metadata = pageMeta({
   description:
     'Answers to common questions about Swiftbay Koryn: the AI engine, deposits, security, withdrawals and fees. Get started today.',
   path: '/faq',
+  keywords: ['swiftbay koryn faq', 'trading faq', 'swiftbay koryn minimum deposit', 'swiftbay koryn withdrawals'],
 })
 
 export default function FaqPage() {

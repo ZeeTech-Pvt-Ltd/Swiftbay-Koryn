@@ -45,13 +45,4 @@ export const RISK_NOTICE =
 export const FORM_ENDPOINT = 'https://meridianc-au.com/homeMailAction.php'
 export const OFFER_NAME = 'SwiftbayKoryn-Site'
 
-export const PAYMENTS = [
-  'VISA',
-  'Mastercard',
-  'Skrill',
-  'Neteller',
-  'Bank Transfer',
-  'USDT',
-  'USDC',
-  'PayPal',
-]
+export const PAYMENTS = ['Mastercard', 'VISA', 'PayPal', 'Bank Transfer']

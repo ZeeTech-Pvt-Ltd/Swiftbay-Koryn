@@ -11,7 +11,6 @@ export const markets = [
     category: 'crypto',
     price: 67412.5,
     changePct: 2.31,
-    color: '#f7931a',
     spark: [64, 66, 65, 68, 67, 70, 69, 72, 71, 73, 72, 74],
   },
   {
@@ -20,7 +19,6 @@ export const markets = [
     category: 'crypto',
     price: 3208.44,
     changePct: 1.84,
-    color: '#627eea',
     spark: [50, 52, 51, 54, 53, 56, 55, 58, 57, 59, 60, 61],
   },
   {
@@ -29,7 +27,6 @@ export const markets = [
     category: 'crypto',
     price: 172.3,
     changePct: 3.12,
-    color: '#14f195',
     spark: [40, 42, 44, 43, 46, 48, 47, 50, 52, 51, 54, 56],
   },
   {
@@ -38,7 +35,6 @@ export const markets = [
     category: 'crypto',
     price: 612.85,
     changePct: -0.42,
-    color: '#f0b90b',
     spark: [62, 60, 61, 59, 58, 60, 59, 57, 58, 56, 57, 55],
   },
   {
@@ -47,7 +43,6 @@ export const markets = [
     category: 'crypto',
     price: 0.624,
     changePct: 0.95,
-    color: '#25a5e0',
     spark: [44, 45, 44, 46, 47, 46, 48, 47, 49, 48, 50, 49],
   },
   {
@@ -56,7 +51,6 @@ export const markets = [
     category: 'crypto',
     price: 0.482,
     changePct: -1.2,
-    color: '#0d1e30',
     spark: [58, 56, 57, 54, 55, 53, 54, 52, 50, 51, 49, 48],
   },
   {
@@ -65,7 +59,6 @@ export const markets = [
     category: 'crypto',
     price: 0.127,
     changePct: 2.05,
-    color: '#c2a633',
     spark: [38, 40, 39, 42, 41, 44, 46, 45, 48, 47, 50, 49],
   },
   {
@@ -74,7 +67,6 @@ export const markets = [
     category: 'crypto',
     price: 32.14,
     changePct: 1.1,
-    color: '#e84142',
     spark: [46, 47, 45, 48, 49, 48, 50, 51, 50, 52, 53, 52],
   },
   {
@@ -83,7 +75,6 @@ export const markets = [
     category: 'crypto',
     price: 6.85,
     changePct: -0.8,
-    color: '#e6007a',
     spark: [55, 53, 54, 52, 51, 52, 50, 49, 50, 48, 47, 46],
   },
   {
@@ -92,7 +83,6 @@ export const markets = [
     category: 'crypto',
     price: 16.42,
     changePct: 2.66,
-    color: '#2a5ada',
     spark: [42, 44, 43, 46, 48, 47, 50, 52, 51, 54, 55, 57],
   },
   // ---- Stocks ----
@@ -102,7 +92,6 @@ export const markets = [
     category: 'stocks',
     price: 232.84,
     changePct: 0.62,
-    color: '#8e8e93',
     spark: [52, 53, 52, 54, 53, 55, 54, 56, 55, 57, 56, 58],
   },
   {
@@ -111,7 +100,6 @@ export const markets = [
     category: 'stocks',
     price: 448.12,
     changePct: -0.35,
-    color: '#00a4ef',
     spark: [60, 59, 58, 59, 57, 58, 56, 57, 55, 56, 54, 55],
   },
   {
@@ -120,7 +108,6 @@ export const markets = [
     category: 'stocks',
     price: 138.55,
     changePct: 2.15,
-    color: '#76b900',
     spark: [44, 47, 46, 50, 52, 51, 55, 54, 58, 57, 61, 62],
   },
   {
@@ -129,7 +116,6 @@ export const markets = [
     category: 'stocks',
     price: 244.3,
     changePct: -1.05,
-    color: '#cc0000',
     spark: [58, 56, 57, 54, 55, 52, 53, 50, 51, 48, 49, 47],
   },
   {
@@ -138,7 +124,6 @@ export const markets = [
     category: 'stocks',
     price: 198.2,
     changePct: 0.85,
-    color: '#ff9900',
     spark: [48, 49, 50, 49, 51, 52, 51, 53, 52, 54, 53, 55],
   },
   {
@@ -147,7 +132,6 @@ export const markets = [
     category: 'stocks',
     price: 186.4,
     changePct: 0.45,
-    color: '#4285f4',
     spark: [50, 51, 50, 52, 51, 53, 52, 54, 53, 55, 54, 56],
   },
   {
@@ -156,7 +140,6 @@ export const markets = [
     category: 'stocks',
     price: 545.72,
     changePct: 1.25,
-    color: '#0866ff',
     spark: [46, 48, 47, 50, 49, 52, 51, 54, 53, 56, 55, 58],
   },
   {
@@ -165,7 +148,6 @@ export const markets = [
     category: 'stocks',
     price: 214.65,
     changePct: -0.18,
-    color: '#16316c',
     spark: [56, 55, 56, 54, 55, 53, 54, 52, 53, 51, 52, 50],
   },
   {
@@ -174,7 +156,6 @@ export const markets = [
     category: 'stocks',
     price: 291.8,
     changePct: 0.33,
-    color: '#1a1f71',
     spark: [51, 52, 51, 53, 52, 54, 53, 55, 54, 56, 55, 57],
   },
   {
@@ -183,7 +164,6 @@ export const markets = [
     category: 'stocks',
     price: 705.44,
     changePct: 1.55,
-    color: '#e50914',
     spark: [45, 47, 46, 49, 48, 51, 50, 53, 52, 55, 56, 58],
   },
 ]

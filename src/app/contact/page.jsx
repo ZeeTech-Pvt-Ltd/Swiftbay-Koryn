@@ -8,6 +8,7 @@ export const metadata = pageMeta({
   description:
     'Get in touch with the Swiftbay Koryn team. Questions about the platform, your account or partnerships? We are available 24/7. Contact us today.',
   path: '/contact',
+  keywords: ['contact swiftbay koryn', 'swiftbay koryn support', 'trading support'],
 })
 
 const CONTACT_CARDS = [

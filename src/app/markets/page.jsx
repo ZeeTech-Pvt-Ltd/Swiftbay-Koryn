@@ -9,6 +9,7 @@ export const metadata = pageMeta({
   description:
     'Browse live Swiftbay Koryn markets: Bitcoin, Ethereum, Solana and more, plus Apple, NVIDIA and Tesla stocks. Start trading from $250 today.',
   path: '/markets',
+  keywords: ['swiftbay koryn markets', 'crypto prices', 'stock prices', 'live market prices'],
 })
 
 export default function MarketsPage() {

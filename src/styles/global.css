@@ -1,6 +1,6 @@
 /* ============================================================
    SWIFTBAY KORYN — Midnight Violet design system
-   Violet-black surfaces, violet→fuchsia gradient accents,
+   Violet-black surfaces, flat purple (#AA8AFA) accents,
    hairline borders. Sora (display) + Inter (body) +
    JetBrains Mono.
    ============================================================ */
@@ -18,19 +18,18 @@
   --faint: #9f94c4;
 
   /* Brand */
-  --accent: #a78bfa;
-  --accent-2: #e879f9;
-  --accent-soft: rgba(167, 139, 250, 0.14);
+  --accent: #AA8AFA;
+  --accent-soft: rgba(170, 138, 250, 0.14);
   --accent-ink: #160b26;
-  --gradient: linear-gradient(115deg, #a78bfa 0%, #e879f9 100%);
+  --gradient: #AA8AFA;
 
   /* Market colors */
   --green: #34d399;
   --red: #f87171;
 
   /* Lines */
-  --line: rgba(167, 139, 250, 0.16);
-  --line-strong: rgba(167, 139, 250, 0.3);
+  --line: rgba(170, 138, 250, 0.16);
+  --line-strong: rgba(170, 138, 250, 0.3);
 
   /* Type */
   --font-display: var(--font-sora), 'Inter', sans-serif;
@@ -42,7 +41,7 @@
   --radius-sm: 12px;
   --container: 1200px;
   --section: 100px;
-  --glow-accent: 0 0 0 1px rgba(167, 139, 250, 0.25), 0 10px 40px rgba(167, 139, 250, 0.18);
+  --glow-accent: 0 0 0 1px rgba(170, 138, 250, 0.25), 0 10px 40px rgba(170, 138, 250, 0.18);
 
   /* Paragraph scale */
   --p-size: 16px;
@@ -92,7 +91,7 @@ button {
 }
 
 ::selection {
-  background: rgba(167, 139, 250,0.28);
+  background: rgba(170, 138, 250,0.28);
   color: #fff;
 }
 
@@ -223,12 +222,12 @@ button {
 .btn--accent {
   background: var(--gradient);
   color: var(--accent-ink);
-  box-shadow: 0 6px 24px rgba(167, 139, 250,0.22);
+  box-shadow: 0 6px 24px rgba(170, 138, 250,0.22);
 }
 
 .btn--accent:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 32px rgba(167, 139, 250,0.34);
+  box-shadow: 0 10px 32px rgba(170, 138, 250,0.34);
 }
 
 .btn--ghost {
@@ -344,10 +343,7 @@ button {
 }
 
 .logo__accent {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--accent);
 }
 
 .nav {
@@ -368,7 +364,7 @@ button {
 
 .nav__link:hover {
   color: var(--ink);
-  background: rgba(167, 139, 250,0.08);
+  background: rgba(170, 138, 250,0.08);
 }
 
 .nav__link.is-active {
@@ -431,8 +427,8 @@ button {
   padding: 96px 0 88px;
   overflow: hidden;
   background:
-    radial-gradient(900px 480px at 82% -10%, rgba(232, 121, 249,0.14), transparent 60%),
-    radial-gradient(760px 420px at 8% 30%, rgba(167, 139, 250,0.1), transparent 60%),
+    radial-gradient(900px 480px at 82% -10%, rgba(170, 138, 250,0.14), transparent 60%),
+    radial-gradient(760px 420px at 8% 30%, rgba(170, 138, 250,0.1), transparent 60%),
     var(--bg);
 }
 
@@ -446,7 +442,7 @@ button {
   font-size: clamp(90px, 17vw, 240px);
   letter-spacing: 0.02em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(167, 139, 250,0.07);
+  -webkit-text-stroke: 1px rgba(170, 138, 250,0.07);
   user-select: none;
   pointer-events: none;
   white-space: nowrap;
@@ -597,7 +593,7 @@ button {
 .form__field input:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(167, 139, 250,0.15);
+  box-shadow: 0 0 0 3px rgba(170, 138, 250,0.15);
 }
 
 .form__phone {
@@ -636,14 +632,14 @@ button {
   --iti-border-color: var(--line-strong);
   --iti-country-selector-bg: var(--bg-deep);
   --iti-icon-color: var(--muted);
-  --iti-hover-color: rgba(167, 139, 250,0.12);
+  --iti-hover-color: rgba(170, 138, 250,0.12);
 }
 
 .form__phone .iti.iti {
   --iti-border-color: var(--line-strong);
   --iti-country-selector-bg: var(--bg-deep);
   --iti-icon-color: var(--muted);
-  --iti-hover-color: rgba(167, 139, 250,0.12);
+  --iti-hover-color: rgba(170, 138, 250,0.12);
 }
 
 .form__phone .iti {
@@ -732,7 +728,7 @@ button {
   display: flex;
   align-items: center;
   gap: 18px;
-  padding: 13px 0;
+  padding: 13px 0 13px 4vw;
 }
 
 .ticker__label {
@@ -778,9 +774,22 @@ button {
 .ticker__item {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-size: 13.5px;
   white-space: nowrap;
+}
+
+.ticker__coin {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ticker__coin-img {
+  object-fit: contain;
 }
 
 .ticker__symbol {
@@ -827,10 +836,7 @@ button {
   font-size: clamp(1.9rem, 3vw, 2.6rem);
   font-weight: 650;
   letter-spacing: -0.01em;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--accent);
   margin-bottom: 6px;
 }
 
@@ -912,7 +918,7 @@ button {
 }
 
 .mkt__table tbody tr:hover {
-  background: rgba(167, 139, 250,0.05);
+  background: rgba(170, 138, 250,0.05);
 }
 
 .mkt__asset {
@@ -1001,13 +1007,13 @@ button {
   right: -70px;
   width: 180px;
   height: 180px;
-  background: radial-gradient(circle, rgba(167, 139, 250,0.16), transparent 70%);
+  background: radial-gradient(circle, rgba(170, 138, 250,0.16), transparent 70%);
   pointer-events: none;
 }
 
 .adv-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(167, 139, 250,0.45);
+  border-color: rgba(170, 138, 250,0.45);
   box-shadow: 0 18px 50px rgba(3, 7, 16, 0.55);
 }
 
@@ -1020,7 +1026,7 @@ button {
   font-weight: 700;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(167, 139, 250,0.28);
+  -webkit-text-stroke: 1px rgba(170, 138, 250,0.28);
   user-select: none;
   pointer-events: none;
 }
@@ -1143,7 +1149,7 @@ button {
 
 .testi-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(167, 139, 250,0.35);
+  border-color: rgba(170, 138, 250,0.35);
 }
 
 .testi-card__stars {
@@ -1322,7 +1328,7 @@ button {
   height: 44px;
   border-radius: 13px;
   background: var(--accent-soft);
-  border: 1px solid rgba(167, 139, 250,0.25);
+  border: 1px solid rgba(170, 138, 250,0.25);
   color: var(--accent);
   flex-shrink: 0;
 }
@@ -1362,7 +1368,7 @@ button {
 }
 
 .acc.is-open {
-  border-color: rgba(167, 139, 250,0.4);
+  border-color: rgba(170, 138, 250,0.4);
 }
 
 .acc__head {
@@ -1432,8 +1438,8 @@ button {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(560px 300px at 50% -60px, rgba(167, 139, 250,0.16), transparent 65%),
-    radial-gradient(420px 240px at 85% 120%, rgba(232, 121, 249,0.12), transparent 65%);
+    radial-gradient(560px 300px at 50% -60px, rgba(170, 138, 250,0.16), transparent 65%),
+    radial-gradient(420px 240px at 85% 120%, rgba(170, 138, 250,0.12), transparent 65%);
   pointer-events: none;
 }
 
@@ -1582,7 +1588,7 @@ button {
   text-align: center;
   padding: 88px 0 72px;
   background:
-    radial-gradient(760px 380px at 50% -80px, rgba(167, 139, 250,0.12), transparent 65%),
+    radial-gradient(760px 380px at 50% -80px, rgba(170, 138, 250,0.12), transparent 65%),
     var(--bg);
   border-bottom: 1px solid var(--line);
 }
@@ -1680,7 +1686,7 @@ button {
 
 .step:hover {
   transform: translateY(-4px);
-  border-color: rgba(167, 139, 250,0.4);
+  border-color: rgba(170, 138, 250,0.4);
 }
 
 .step__num {
@@ -1691,7 +1697,7 @@ button {
   height: 46px;
   border-radius: 50%;
   background: var(--accent-soft);
-  border: 1px solid rgba(167, 139, 250,0.3);
+  border: 1px solid rgba(170, 138, 250,0.3);
   color: var(--accent);
   font-family: var(--font-mono);
   font-size: 15px;
@@ -1746,7 +1752,7 @@ button {
   height: 44px;
   border-radius: 13px;
   background: var(--accent-soft);
-  border: 1px solid rgba(167, 139, 250,0.25);
+  border: 1px solid rgba(170, 138, 250,0.25);
   color: var(--accent);
   flex-shrink: 0;
 }
@@ -1828,7 +1834,7 @@ button {
   height: 78px;
   border-radius: 50%;
   background: var(--accent-soft);
-  border: 1px solid rgba(167, 139, 250,0.35);
+  border: 1px solid rgba(170, 138, 250,0.35);
   color: var(--accent);
   margin-bottom: 26px;
 }
@@ -1981,7 +1987,7 @@ button {
 
 .guide-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(167, 139, 250,0.4);
+  border-color: rgba(170, 138, 250,0.4);
 }
 
 .guide-card__chip {
@@ -1992,7 +1998,7 @@ button {
   text-transform: uppercase;
   color: var(--accent);
   background: var(--accent-soft);
-  border: 1px solid rgba(167, 139, 250,0.25);
+  border: 1px solid rgba(170, 138, 250,0.25);
   padding: 5px 12px;
   border-radius: 999px;
   margin-bottom: 16px;

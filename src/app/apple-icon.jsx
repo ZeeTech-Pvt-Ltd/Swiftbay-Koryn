@@ -27,14 +27,14 @@ export default function AppleIcon() {
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: '#150f26',
-            border: '1px solid rgba(167, 139, 250, 0.35)',
+            border: '1px solid rgba(170, 138, 250, 0.35)',
           }}
         >
           <div
             style={{
               fontSize: '86px',
               fontWeight: '700',
-              color: '#a78bfa',
+              color: '#AA8AFA',
               display: 'flex',
               lineHeight: 1,
             }}

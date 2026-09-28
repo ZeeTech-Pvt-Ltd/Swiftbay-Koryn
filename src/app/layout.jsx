@@ -1,6 +1,8 @@
 import { Sora, Inter, JetBrains_Mono } from 'next/font/google'
+import Script from 'next/script'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ScrollToTop from '@/components/ScrollToTop'
 import { JsonLd, orgSchema, webSiteSchema } from '@/lib/seo'
 import { SITE } from '@/data/content'
 import '@/styles/global.css'
@@ -72,6 +74,17 @@ export default function RootLayout({ children }) {
         </a>
         <Header />
         <main id="main-content">{children}</main>
+        <ScrollToTop />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XBT1W0X15J"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XBT1W0X15J');`}
+        </Script>
         <Footer />
         <JsonLd data={orgSchema()} />
         <JsonLd data={webSiteSchema()} />

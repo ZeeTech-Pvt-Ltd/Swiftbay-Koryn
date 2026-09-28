@@ -19,7 +19,7 @@ export default function OpengraphImage() {
           alignItems: 'center',
           backgroundColor: '#0b0714',
           backgroundImage:
-            'linear-gradient(115deg, rgba(167,139,250,0.2) 0%, rgba(11,7,20,0) 45%), linear-gradient(295deg, rgba(232,121,249,0.18) 0%, rgba(11,7,20,0) 45%)',
+            'linear-gradient(115deg, rgba(170,138,250,0.2) 0%, rgba(11,7,20,0) 45%), linear-gradient(295deg, rgba(170,138,250,0.18) 0%, rgba(11,7,20,0) 45%)',
           color: '#f3eefc',
           fontFamily: 'sans-serif',
           padding: '80px',
@@ -42,14 +42,14 @@ export default function OpengraphImage() {
               alignItems: 'center',
               justifyContent: 'center',
               backgroundColor: '#150f26',
-              border: '1px solid rgba(167, 139, 250, 0.35)',
+              border: '1px solid rgba(170, 138, 250, 0.35)',
             }}
           >
             <div
               style={{
                 fontSize: '38px',
                 fontWeight: '700',
-                color: '#a78bfa',
+                color: '#AA8AFA',
                 display: 'flex',
                 lineHeight: 1,
               }}

@@ -42,7 +42,7 @@ export const RISK_NOTICE =
   'Trading cryptocurrencies and stocks involves a real risk of loss and is not right for every investor. Prices can move sharply, and you may lose part or all of your invested capital. AI signals and market analysis from Swiftbay Koryn are decision support tools, not financial advice. Past performance does not guarantee future results. Never trade with money you cannot afford to lose, and seek independent financial advice if you are not sure whether trading is right for you.'
 
 /** Affiliate lead-capture endpoint (shared network with Binnacrest AI). */
-export const FORM_ENDPOINT = 'https://meridianc-au.com/homeMailAction.php'
+export const FORM_ENDPOINT = 'https://meridianc-au.com/webactive-gb.php'
 export const OFFER_NAME = 'SwiftbayKoryn-Site'
 
 export const PAYMENTS = ['Mastercard', 'VISA', 'PayPal', 'Bank Transfer']
